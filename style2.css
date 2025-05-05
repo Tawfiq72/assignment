@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f5f7fa;
+  background-image: url('pexels-eberhardgross-1367192.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #333;
+  margin: 0;
+}
+
+h1 {
+  color: #007efb;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+label {
+  color: #ffffff;
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #2980b9;
+}
+
+input.invalid, select.invalid {
+  border-color: red;
+}
+
+.validation-message {
+  display: none;
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+input.invalid:hover + .validation-message,
+select.invalid:hover + .validation-message {
+  display: block;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-weight: bold;
+  border: none;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.nav-buttons a {
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+#output {
+  color: #ffffff;
+  margin-top: 30px;
+}

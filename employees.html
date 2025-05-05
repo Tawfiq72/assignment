@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee List</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <h1>Sample Employee List</h1>
+
+  <table id="employeeTable" border="1">
+    <thead>
+      <tr>
+        <th>ID</th><th>Name</th><th>Email</th><th>Department</th>
+        <th>Joining Date</th><th>Gender</th><th>Employment Type</th><th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>EMP001</td><td>John Doe</td><td>john@example.com</td><td>IT</td>
+        <td>2023-01-10</td><td>Male</td><td>Full-Time</td>
+        <td>
+          <button onclick="editRow(this)">Edit</button>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>EMP002</td><td>Jane Smith</td><td>jane@example.com</td><td>HR</td>
+        <td>2022-11-05</td><td>Female</td><td>Full-Time</td>
+        <td>
+          <button onclick="editRow(this)">Edit</button>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>EMP003</td><td>Mike Lee</td><td>mike@example.com</td><td>Sales</td>
+        <td>2021-09-23</td><td>Male</td><td>Full-Time</td>
+        <td>
+          <button onclick="editRow(this)">Edit</button>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>EMP004</td><td>Anna Kim</td><td>anna@example.com</td><td>Marketing</td>
+        <td>2024-02-15</td><td>Female</td><td>Full-Time</td>
+        <td>
+          <button onclick="editRow(this)">Edit</button>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>EMP005</td><td>David Tan</td><td>david@example.com</td><td>IT</td>
+        <td>2020-06-30</td><td>Male</td><td>Full-Time</td>
+        <td>
+          <button onclick="editRow(this)">Edit</button>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Edit Employee</h2>
+  <div id="editForm" style="display:none;">
+    <label>ID: <input type="text" id="editID" disabled></label><br>
+    <label>Name: <input type="text" id="editName"></label><br>
+    <label>Email: <input type="text" id="editEmail"></label><br>
+    <label>Department: <input type="text" id="editDept"></label><br>
+    <label>Joining Date: <input type="date" id="editDate"></label><br>
+    <label>Gender: <input type="text" id="editGender"></label><br>
+    <label>Employment Type: <input type="text" id="editEmpType"></label><br><br>
+    <button onclick="saveChanges()">Save Changes</button>
+  </div>
+
+  <div class="nav-buttons" style="margin-top: 20px;">
+    <a href="index.html">Back to Home</a>
+  </div>
+
+  <script src="employees.js"></script>
+
+</body>
+</html>
